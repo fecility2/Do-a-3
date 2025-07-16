@@ -9,30 +9,28 @@ body {
   background-size: cover;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Great Vibes', cursive;
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .video-container video {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 }
 
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 10px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   color: #fff;
-  font-size: 2.5rem;
-  text-align: center;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
   z-index: 2;
+  text-align: center;
   padding: 0 10px;
 }
