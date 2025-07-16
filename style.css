@@ -7,12 +7,28 @@
 body {
   background: url('bg.png') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  overflow: hidden;
   font-family: sans-serif;
+  color: white;
+  min-height: 200vh; /* Sayfayı uzatmak için, test amaçlı */
+}
+
+.main-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.video-container {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .video-container video {
