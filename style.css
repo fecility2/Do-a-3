@@ -16,7 +16,7 @@ body {
 }
 
 .ozel-mesaj {
-  font-size: 2.4rem; /* ← Boyutu büyüttük */
+  font-size: 1.8rem; /* ← Boyutu büyüttük */
   margin: 20px 0;
   font-family: 'Playfair Display', serif;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
