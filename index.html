@@ -5,24 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Doğa💖</title>
 
-  <!-- Google Fonts: Sacramento + Playfair Display -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Sacramento&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Arka planda otomatik ve döngüde müzik -->
-  <audio id="bg-music" autoplay loop muted>
+  <!-- Arka planda müzik -->
+  <audio id="bg-music" loop>
     <source src="music.mp3" type="audio/mpeg">
     Tarayıcınız ses etiketini desteklemiyor.
   </audio>
 
-  <!-- İsteğe bağlı ses açma butonu -->
-  <button onclick="document.getElementById('bg-music').muted = false;" style="position: fixed; top: 20px; right: 20px; z-index: 1000; padding: 10px; border: none; background-color: #fff3; color: white; border-radius: 10px; font-size: 1rem; cursor: pointer;">
-    🔊 Sesi Aç
-  </button>
+  <!-- Ses Aç Butonu -->
+  <button id="play-btn">🔊 Sesi Aç</button>
 
   <div class="main-content">
     <h1 class="baslik">DOĞUM GÜNÜN KUTLU OLSUN &lt;3</h1>
@@ -35,10 +31,28 @@
     </div>
 
     <div class="mesaj">
-      <p>Seninle her gün bir kutlama :) </p>
-      <p>İyi ki doğdun, iyi ki varsın 💖<br> </p>
-      <p> <br>Yeniden doğdu kalbim sevgiyle <br>Ilık bir gülüşle başladı her an <br>Lale gibi narin, bambaşka bir his <br>Duysun sesimizi yıldızlar <br>Işıklarıyla aydınlatır bulutlu yolları <br>Zaman durur, sen ve ben burada </p>
+      <p>Seninle her gün bir kutlama :)</p>
+      <p>İyi ki doğdun, iyi ki varsın 💖</p>
+      <p>
+        <br>Yeniden doğdu kalbim sevgiyle <br>
+        Ilık bir gülüşle başladı her an <br>
+        Lale gibi narin, bambaşka bir his <br>
+        Duysun sesimizi yıldızlar <br>
+        Işıklarıyla aydınlatır bulutlu yolları <br>
+        Zaman durur, sen ve ben burada
+      </p>
     </div>
   </div>
+
+  <!-- Müzik başlatma kodu -->
+  <script>
+    const playBtn = document.getElementById('play-btn');
+    const bgMusic = document.getElementById('bg-music');
+
+    playBtn.addEventListener('click', () => {
+      bgMusic.play();
+      playBtn.style.display = 'none'; // butonu gizle
+    });
+  </script>
 </body>
 </html>
