@@ -16,15 +16,13 @@ body {
 }
 
 .ozel-mesaj {
-  font-size: 1.8rem; /* ← Boyutu büyüttük */
+  font-size: 2.1rem;
   margin: 20px 0;
   font-family: 'Playfair Display', serif;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   animation: fadeInUp 2s ease-out both;
   color: white;
 }
-
-
 
 .main-content {
   display: flex;
@@ -60,18 +58,9 @@ body {
   border-radius: 20px;
 }
 
-.mesaj {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  border-radius: 20px;
-  max-width: 700px;
-  backdrop-filter: blur(8px);
-  animation: fadeInUp 2s ease-out both;
-}
-
 .mesaj p {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   margin: 16px 0;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
 }
@@ -93,7 +82,7 @@ body {
   padding: 16px 24px;
   border-radius: 12px;
   width: 100%;
-  font-size: 1.5rem; /* Burayı büyüttük */
+  font-size: 1.6rem;
   font-family: 'Playfair Display', serif;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -101,7 +90,6 @@ body {
   transform: translateY(20px);
   animation: slideIn 0.8s forwards;
 }
-
 
 .siir-kutu p:nth-child(1) { animation-delay: 0.2s; }
 .siir-kutu p:nth-child(2) { animation-delay: 0.4s; }
@@ -131,6 +119,27 @@ body {
   background: rgba(255, 255, 255, 0.4);
   color: #ff69b4;
   border-color: #ff69b4;
+}
+
+/* En Alttaki Fotoğraf ve Yazı */
+.sevgi-fotografi {
+  margin-top: 60px;
+  text-align: center;
+  animation: fadeInUp 2s ease-out both;
+}
+
+.sevgi-fotografi img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.sevgi-fotografi p {
+  font-size: 2.2rem;
+  margin-top: 12px;
+  font-family: 'Sacramento', cursive;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Animasyonlar */
