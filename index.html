@@ -33,25 +33,27 @@
     <div class="mesaj">
       <p>Seninle her gün bir kutlama :)</p>
       <p>İyi ki doğdun, iyi ki varsın 💖</p>
-      <p>
-        <br>Yeniden doğdu kalbim sevgiyle <br>
-        Ilık bir gülüşle başladı her an <br>
-        Lale gibi narin, bambaşka bir his <br>
-        Duysun sesimizi yıldızlar <br>
-        Işıklarıyla aydınlatır bulutlu yolları <br>
-        Zaman durur, sen ve ben burada
-      </p>
+    </div>
+
+    <!-- Şiir kutulu ve animasyonlu -->
+    <div class="siir-kutu">
+      <p>Yeniden doğdu kalbim sevgiyle</p>
+      <p>Ilık bir gülüşle başladı her an</p>
+      <p>Lale gibi narin, bambaşka bir his</p>
+      <p>Duysun sesimizi yıldızlar</p>
+      <p>Işıklarıyla aydınlatır bulutlu yolları</p>
+      <p>Zaman durur, sen ve ben burada</p>
     </div>
   </div>
 
-  <!-- Müzik başlatma kodu -->
+  <!-- Müzik başlatma -->
   <script>
     const playBtn = document.getElementById('play-btn');
     const bgMusic = document.getElementById('bg-music');
 
     playBtn.addEventListener('click', () => {
       bgMusic.play();
-      playBtn.style.display = 'none'; // butonu gizle
+      playBtn.style.display = 'none';
     });
   </script>
 </body>
